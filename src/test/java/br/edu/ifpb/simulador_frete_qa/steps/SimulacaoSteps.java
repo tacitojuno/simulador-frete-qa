@@ -1,12 +1,12 @@
-package br.edu.ifpb.sistema_entregas.steps;
+package br.edu.ifpb.simulador_frete_qa.steps;
 
-import br.edu.ifpb.sistema_entregas.SistemaEntregasApplication;
-import br.edu.ifpb.sistema_entregas.model.ModalidadeEnvio;
-import br.edu.ifpb.sistema_entregas.model.Simulacao;
-import br.edu.ifpb.sistema_entregas.model.TipoItem;
-import br.edu.ifpb.sistema_entregas.model.Usuario;
-import br.edu.ifpb.sistema_entregas.service.SimulacaoService;
-import br.edu.ifpb.sistema_entregas.service.UsuarioService;
+import br.edu.ifpb.simulador_frete_qa.SimuladorFreteApplication;
+import br.edu.ifpb.simulador_frete_qa.model.ModalidadeEnvio;
+import br.edu.ifpb.simulador_frete_qa.model.Simulacao;
+import br.edu.ifpb.simulador_frete_qa.model.TipoItem;
+import br.edu.ifpb.simulador_frete_qa.model.Usuario;
+import br.edu.ifpb.simulador_frete_qa.service.SimulacaoService;
+import br.edu.ifpb.simulador_frete_qa.service.UsuarioService;
 import io.cucumber.java.pt.Dado;
 import io.cucumber.java.pt.E;
 import io.cucumber.java.pt.Então;
@@ -19,7 +19,7 @@ import org.springframework.test.context.ActiveProfiles;
 import static org.junit.jupiter.api.Assertions.*;
 
 @CucumberContextConfiguration
-@SpringBootTest(classes = SistemaEntregasApplication.class)
+@SpringBootTest(classes = SimuladorFreteApplication.class)
 @ActiveProfiles("test") //Garante que o perfil de teste seja usado, isolando o ambiente de produção
 public class SimulacaoSteps {
 

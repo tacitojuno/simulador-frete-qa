@@ -1,4 +1,4 @@
-package br.edu.ifpb.sistema_entregas.model;
+package br.edu.ifpb.simulador_frete_qa.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;

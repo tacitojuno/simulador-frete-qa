@@ -1,4 +1,4 @@
-package br.edu.ifpb.sistema_entregas.service;
+package br.edu.ifpb.simulador_frete_qa.service;
 
 import org.springframework.stereotype.Service;
 import java.util.HashMap;

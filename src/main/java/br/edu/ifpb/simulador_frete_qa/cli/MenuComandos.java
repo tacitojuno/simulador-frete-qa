@@ -136,14 +136,14 @@ public class MenuComandos {
     }
 }
 */
-package br.edu.ifpb.sistema_entregas.cli;
+package br.edu.ifpb.simulador_frete_qa.cli;
 
-import br.edu.ifpb.sistema_entregas.model.ModalidadeEnvio;
-import br.edu.ifpb.sistema_entregas.model.Simulacao;
-import br.edu.ifpb.sistema_entregas.model.TipoItem;
-import br.edu.ifpb.sistema_entregas.model.Usuario;
-import br.edu.ifpb.sistema_entregas.service.SimulacaoService;
-import br.edu.ifpb.sistema_entregas.service.UsuarioService;
+import br.edu.ifpb.simulador_frete_qa.model.ModalidadeEnvio;
+import br.edu.ifpb.simulador_frete_qa.model.Simulacao;
+import br.edu.ifpb.simulador_frete_qa.model.TipoItem;
+import br.edu.ifpb.simulador_frete_qa.model.Usuario;
+import br.edu.ifpb.simulador_frete_qa.service.SimulacaoService;
+import br.edu.ifpb.simulador_frete_qa.service.UsuarioService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;

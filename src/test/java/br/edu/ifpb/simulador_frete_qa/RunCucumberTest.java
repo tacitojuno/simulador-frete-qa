@@ -1,4 +1,4 @@
-package br.edu.ifpb.sistema_entregas;
+package br.edu.ifpb.simulador_frete_qa;
 
 import org.junit.platform.suite.api.IncludeEngines;
 import org.junit.platform.suite.api.SelectClasspathResource;

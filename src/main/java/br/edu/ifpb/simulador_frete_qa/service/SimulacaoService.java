@@ -1,10 +1,10 @@
-package br.edu.ifpb.sistema_entregas.service;
+package br.edu.ifpb.simulador_frete_qa.service;
 
-import br.edu.ifpb.sistema_entregas.model.Simulacao;
-import br.edu.ifpb.sistema_entregas.model.TipoItem;
-import br.edu.ifpb.sistema_entregas.model.Usuario;
-import br.edu.ifpb.sistema_entregas.repository.SimulacaoRepository;
-import br.edu.ifpb.sistema_entregas.repository.UsuarioRepository;
+import br.edu.ifpb.simulador_frete_qa.model.Simulacao;
+import br.edu.ifpb.simulador_frete_qa.model.TipoItem;
+import br.edu.ifpb.simulador_frete_qa.model.Usuario;
+import br.edu.ifpb.simulador_frete_qa.repository.SimulacaoRepository;
+import br.edu.ifpb.simulador_frete_qa.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

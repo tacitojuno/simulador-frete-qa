@@ -1,13 +1,13 @@
-package br.edu.ifpb.sistema_entregas;
+package br.edu.ifpb.simulador_frete_qa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SistemaEntregasApplication {
+public class SimuladorFreteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SistemaEntregasApplication.class, args);
+		SpringApplication.run(SimuladorFreteApplication.class, args);
 	}
 
 }

@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.edu.ifpb</groupId>
-	<artifactId>sistema-entregas</artifactId>
+	<artifactId>simulador-frete-qa</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>

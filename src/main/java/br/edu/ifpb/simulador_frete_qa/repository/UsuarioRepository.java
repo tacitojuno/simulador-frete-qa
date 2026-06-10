@@ -1,6 +1,6 @@
-package br.edu.ifpb.sistema_entregas.repository;
+package br.edu.ifpb.simulador_frete_qa.repository;
 
-import br.edu.ifpb.sistema_entregas.model.Usuario;
+import br.edu.ifpb.simulador_frete_qa.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

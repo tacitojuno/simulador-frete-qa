@@ -1,7 +1,7 @@
-package br.edu.ifpb.sistema_entregas.service;
+package br.edu.ifpb.simulador_frete_qa.service;
 
-import br.edu.ifpb.sistema_entregas.model.Usuario;
-import br.edu.ifpb.sistema_entregas.repository.UsuarioRepository;
+import br.edu.ifpb.simulador_frete_qa.model.Usuario;
+import br.edu.ifpb.simulador_frete_qa.repository.UsuarioRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
