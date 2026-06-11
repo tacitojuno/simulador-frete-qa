@@ -223,10 +223,10 @@ public class MenuComandos implements CommandLineRunner {
                     Double peso = Double.parseDouble(scanner.nextLine());
 
                     System.out.print("Cidade Origem: ");
-                    String origem = scanner.nextLine();
+                    String origem = scanner.nextLine().toUpperCase();
 
                     System.out.print("Cidade Destino: ");
-                    String destino = scanner.nextLine();
+                    String destino = scanner.nextLine().toUpperCase();
 
                     System.out.print("Modalidade (ECONOMICO, EXPRESSO, PRIORITARIO): ");
                     ModalidadeEnvio modalidade = ModalidadeEnvio.valueOf(scanner.nextLine().toUpperCase());
@@ -240,7 +240,6 @@ public class MenuComandos implements CommandLineRunner {
 
                     Simulacao salva = simulacaoService.criarSimulacao(sim, usuarioLogado.getId());
 
-                    // Saída detalhada conforme você pediu
                     System.out.printf("\nSIMULAÇÃO CONCLUÍDA! (ID: %d)\nRota: %s -> %s\nTipo: %s | Modalidade: %s | Peso: %.2f kg\nPrazo: %d dias úteis\nCusto Total: R$ %.2f\n",
                             salva.getId(), salva.getCidadeOrigem(), salva.getCidadeDestino(),
                             salva.getTipoItem(), salva.getModalidadeEnvio(), salva.getPeso(),
@@ -257,7 +256,6 @@ public class MenuComandos implements CommandLineRunner {
                     } else {
                         System.out.println("\nSEU HISTÓRICO DE SIMULAÇÕES:");
                         for (Simulacao s : lista) {
-                            // Listagem detalhada seguindo o mesmo padrão da criação
                             System.out.printf("ID: %d | Rota: %s -> %s | Tipo: %s | Modalidade: %s | Peso: %.2f kg | Prazo: %d dias | Custo: R$ %.2f\n",
                                     s.getId(), s.getCidadeOrigem(), s.getCidadeDestino(),
                                     s.getTipoItem(), s.getModalidadeEnvio(), s.getPeso(),
@@ -287,9 +285,14 @@ public class MenuComandos implements CommandLineRunner {
                     System.out.print("Digite o ID da simulação para excluir: ");
                     Long id = Long.parseLong(scanner.nextLine());
 
-                    simulacaoService.deletarSimulacao(id, usuarioLogado.getId());
-                    System.out.println("Simulação excluída com sucesso do seu histórico!");
-
+                    System.out.println("Tem certeza que deseja excluir a simulação ID " + id + "? (S/N)");
+                    String confirmacao = scanner.nextLine();
+                    if (confirmacao.equalsIgnoreCase("S")) {
+                        simulacaoService.deletarSimulacao(id, usuarioLogado.getId());
+                        System.out.println("Simulação excluída com sucesso do seu histórico!");
+                    } else {
+                        System.out.println("Exclusão cancelada.");
+                    }
                 } else {
                     System.out.println("Opção inválida.");
                 }
