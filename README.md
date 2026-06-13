@@ -21,7 +21,7 @@ O sistema foi arquitetado em camadas (Model, Repository, Service, CLI), utilizan
 
 
 * **Diagrama de Classes:**
-![Diagrama de Classes](docs/Diagrama de Classes.png)
+![Diagrama de Classes](docs/Diagrama-de-Classes.png)
 
 ---
 
